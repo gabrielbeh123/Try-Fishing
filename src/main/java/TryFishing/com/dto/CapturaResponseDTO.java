@@ -1,4 +1,4 @@
-package TryFishing.com.controller;
+package TryFishing.com.dto;
 
 import TryFishing.com.entity.Captura;
 
