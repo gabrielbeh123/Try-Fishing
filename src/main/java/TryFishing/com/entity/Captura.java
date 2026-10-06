@@ -24,7 +24,9 @@ public class Captura {
 
     private String iscaUtilizada;
     private String condicoesClimaticas;
-    private String fotoUrl;
+
+    @Column(length = 1000)
+    private String fotoUrl ;
 
     @ManyToOne
     @JoinColumn(name = "local_id", nullable = false)
