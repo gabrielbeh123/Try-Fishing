@@ -5,7 +5,6 @@ import lombok.*;
 
 @Entity
 @Table(name = "tb_especies")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Especie {
@@ -20,4 +19,44 @@ public class Especie {
     private String nomeCientifico;
     private Double tamanhoMinimoAbateCm;
     private String epocaDefeso;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNomePopular() {
+        return nomePopular;
+    }
+
+    public void setNomePopular(String nomePopular) {
+        this.nomePopular = nomePopular;
+    }
+
+    public String getNomeCientifico() {
+        return nomeCientifico;
+    }
+
+    public void setNomeCientifico(String nomeCientifico) {
+        this.nomeCientifico = nomeCientifico;
+    }
+
+    public Double getTamanhoMinimoAbateCm() {
+        return tamanhoMinimoAbateCm;
+    }
+
+    public void setTamanhoMinimoAbateCm(Double tamanhoMinimoAbateCm) {
+        this.tamanhoMinimoAbateCm = tamanhoMinimoAbateCm;
+    }
+
+    public String getEpocaDefeso() {
+        return epocaDefeso;
+    }
+
+    public void setEpocaDefeso(String epocaDefeso) {
+        this.epocaDefeso = epocaDefeso;
+    }
 }

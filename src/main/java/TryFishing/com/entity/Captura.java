@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tb_capturas")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Captura {
@@ -38,4 +37,92 @@ public class Captura {
     @ManyToOne
     @JoinColumn(name = "equipamento_id")
     private Equipamento equipamento;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getDataHora() {
+        return dataHora;
+    }
+
+    public void setDataHora(LocalDateTime dataHora) {
+        this.dataHora = dataHora;
+    }
+
+    public Double getPesoKg() {
+        return pesoKg;
+    }
+
+    public void setPesoKg(Double pesoKg) {
+        this.pesoKg = pesoKg;
+    }
+
+    public Double getComprimentoCm() {
+        return comprimentoCm;
+    }
+
+    public void setComprimentoCm(Double comprimentoCm) {
+        this.comprimentoCm = comprimentoCm;
+    }
+
+    public Boolean getPesqueESolte() {
+        return pesqueESolte;
+    }
+
+    public void setPesqueESolte(Boolean pesqueESolte) {
+        this.pesqueESolte = pesqueESolte;
+    }
+
+    public String getIscaUtilizada() {
+        return iscaUtilizada;
+    }
+
+    public void setIscaUtilizada(String iscaUtilizada) {
+        this.iscaUtilizada = iscaUtilizada;
+    }
+
+    public String getCondicoesClimaticas() {
+        return condicoesClimaticas;
+    }
+
+    public void setCondicoesClimaticas(String condicoesClimaticas) {
+        this.condicoesClimaticas = condicoesClimaticas;
+    }
+
+    public String getFotoUrl() {
+        return fotoUrl;
+    }
+
+    public void setFotoUrl(String fotoUrl) {
+        this.fotoUrl = fotoUrl;
+    }
+
+    public LocalDePesca getLocal() {
+        return local;
+    }
+
+    public void setLocal(LocalDePesca local) {
+        this.local = local;
+    }
+
+    public Especie getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(Especie especie) {
+        this.especie = especie;
+    }
+
+    public Equipamento getEquipamento() {
+        return equipamento;
+    }
+
+    public void setEquipamento(Equipamento equipamento) {
+        this.equipamento = equipamento;
+    }
 }
